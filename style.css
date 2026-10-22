@@ -1,0 +1,319 @@
+ 
+    body {
+    font-family: Arial;
+    margin: 20px;
+    color: #142b3a;
+}
+
+
+
+header {
+    background-color: #ffffff;
+    border: 2px solid #070707;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+nav a {
+    text-decoration: none;
+    color: #131414;
+    margin: 8px;
+    font-weight: bold;
+}
+
+
+
+.banner {
+  background-color: #19a2b2;
+  color: white;
+  min-height: 480px;
+  margin-top: 20px;
+  padding: 70px 4%;
+  text-align: left;
+}
+
+.service-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.university-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.visa-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.career-image{
+  width:100%;
+  height:100px;
+  object-fit: cover;
+  border-radius: 8px;
+
+}
+
+.banner h2 {
+  font-size: 42px;
+  line-height: 1.2;
+  max-width: 700px;
+}
+
+.banner p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 25px 0 55px;
+}
+
+.banner button {
+  background-color: #55dce0;
+  color: #142b3a;
+  border: none;
+  padding: 15px 35px;
+  font-size: 18px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+button {
+    background-color: #EAF6F7;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+
+
+.title {
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    border: 2px solid #142b3a;
+    width: 20%;
+    height: 170px;
+    text-align: center;
+    padding: 15px;
+
+}
+  .box:hover {
+  background-color: #eaf6f7;
+}
+
+.box h2 {
+    font-size: 50px;
+}
+
+.data {
+line-height: 2.5;
+
+}
+
+
+ul li {
+  margin-bottom: 25px;
+}
+
+li strong {
+  margin-right: 8px;
+}
+
+.sections {
+  display: flex;
+  gap: 20px;
+}
+
+.section {
+  position: relative;
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section.two img {
+  object-fit: contain;
+  background: #06345f;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.card-text p {
+  display: none;
+}
+
+.section:hover .card-text p {
+  display: block;
+}
+
+
+
+.founder {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.founder-text {
+  width: 60%;
+}
+
+.founder img {
+  width: 35%;
+  height: 400px;
+  object-fit: cover;
+}
+
+
+
+.start-button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 28px;
+  background-color: #5ee6eb;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+.image {
+  border: 2px solid #142b3a;
+  width: 50%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+ .logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+  }
+
+  .footer-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    background: rgb(7, 7, 7);
+  }
+
+
+
+footer {
+    color: #142B3A;
+    border: 2px solid #070707;
+    padding: 5px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+footer a {
+  color: #1c1e1e;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Phone: 200px–480px */
+@media screen and (min-width: 200px) and (max-width: 480px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .sections {
+    flex-direction: column;
+  }
+
+  .section {
+    width: 100%;
+  }
+}
+
+/* Tablet: 481px–768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .services {
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: 40%;
+    margin: 10px;
+  }
+
+  .sections {
+    flex-direction: column;
+  }
+
+  .section {
+    width: 100%;
+  }
+}
